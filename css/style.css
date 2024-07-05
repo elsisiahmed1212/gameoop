@@ -1,0 +1,75 @@
+/* glopal  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Comfortaa", sans-serif;
+}
+i{
+    cursor: pointer;
+}
+:root{
+    /* colors */
+    --card-bg-and-body : #272B30;
+    --span-bg : #32383E;
+    --bg-body-tertiary:#3A497B;
+    --gren : green;
+}
+.w-70{
+    width: 70%;
+}
+.card-bg{
+    background-color: var(--card-bg-and-body);
+}
+.span-bg{
+    background-color:var(--span-bg) ;
+}
+body{
+    background-color:var(--card-bg-and-body);
+}
+
+/*header */
+.header{
+    height: 30vh;
+    background-image: url('/images/wraper.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.nav{
+    margin-top: -40px;
+}
+.nav img{
+    width: 40px;
+    vertical-align: middle;
+}
+.bg-body-tertiary {
+    background-color:var(--bg-body-tertiary) !important;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: rgb(26, 158, 235);
+}
+.nav-link:hover {
+    color: rgb(26, 158, 235);
+}
+/* card */
+.card .prise{
+    background-color: rgb(78, 88, 131);
+    transition: all 1s;
+}
+.card:hover .prise{
+    background-color: var(--gren);
+}
+.card{
+    transition: all 1s;
+}
+.card img{
+    filter: grayscale(100%);
+    transition: all 1s; 
+}
+.card:hover img{
+    filter: none;
+}
+.card:hover{
+    transform: scale(1.06);
+}
